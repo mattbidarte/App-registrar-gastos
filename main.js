@@ -8,7 +8,7 @@ function entrar(){
     console.log('3: Registrar ingreso')
     console.log('4: Salir')
 
-    let op = prompt(`Buenos dias ${nombre}!\n¿Que operación deseas hacer?`)
+    let op = prompt(`Buenos dias ${nombre}!\n¿Que operación deseas hacer?\n1: Ver saldo total\n2: Registrar gasto\n3: Registrar ingreso\n4: Salir`)
     switch(op){
         case "1":
             verTotal()
