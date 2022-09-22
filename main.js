@@ -1,4 +1,4 @@
-let saldo = 10000
+let saldo = 0
 let nombre = prompt('Ingresar nombre')
 
 function entrar(){
