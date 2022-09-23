@@ -14,8 +14,13 @@ function entrar(){
             verTotal()
             break
         case "2":
-            let nomGasto = prompt(`¿Nombre del gasto, ${nombre}?`)
-            registroGasto(nomGasto)
+            if(saldo == 0){
+                alert(`Aún tenes un saldo de $0, no podes registrar un gasto.`)
+                entrar()
+            }else{
+                let nomGasto = prompt(`¿Nombre del gasto, ${nombre}?`)
+                registroGasto(nomGasto)
+            }
             break
         case "3":
             registroIngreso()
@@ -37,8 +42,8 @@ function verTotal(){
 
 function registroGasto(nomGasto){
     let monto = Number(prompt(`¿Cual es el monto?`))
-
-    if (monto <= saldo){
+    
+    if(monto <= saldo){
         alert(`Gasto registrado correctamente`)
         console.log(`Se gasto $${monto} en ${nomGasto}.`)
         saldo -= monto
