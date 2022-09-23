@@ -1,5 +1,5 @@
 let saldo = 0
-let nombre = prompt('Ingresar nombre')
+let nombre = prompt('Ingresá tu nombre')
 
 function entrar(){
     console.log('--- Opciones ---')
@@ -42,7 +42,7 @@ function verTotal(){
 
 function registroGasto(nomGasto){
     let monto = Number(prompt(`¿Cual es el monto?`))
-    
+
     if(monto <= saldo){
         alert(`Gasto registrado correctamente`)
         console.log(`Se gasto $${monto} en ${nomGasto}.`)
