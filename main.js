@@ -69,7 +69,7 @@ function salir(){
     alert(`Que tenga un lindo dia, ${nombre}!`)
 }
 
-if(nombre===""){
+if(nombre==""){
     alert('No dejes este campo vacío')
     nombre = prompt('Ingresar nombre')
 }else{
